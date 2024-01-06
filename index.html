@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/icon.ico">
+    <title>Piano</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <header><h1 class="title">piano</h1></header>
+
+        <main>
+
+            <div class="piano">
+
+                <div class="notas">
+
+                    <div data-key="keyq">   <h1>Q</h1>   <h3>C</h3>    </div>
+                    <div data-key="keyw">   <h1>W</h1>   <h3>D</h3>    </div>
+                    <div data-key="keye">   <h1>E</h1>   <h3>E</h3>    </div>
+                    <div data-key="keyr">   <h1>R</h1>   <h3>F</h3>    </div>
+                    <div data-key="keyt">   <h1>T</h1>   <h3>G</h3>    </div>
+                    <div data-key="keyy">   <h1>Y</h1>   <h3>A</h3>    </div>
+                    <div data-key="keyu">   <h1>U</h1>   <h3>B</h3>    </div>
+
+                </div>
+
+                <div class="sustenidos">
+
+                    <div data-key="digit2">   <h1>2</h1>   <h3>C#</h3>   </div>
+                    <div data-key="digit3">   <h1>3</h1>   <h3>D#</h3>   </div>
+
+                    <div style="visibility: hidden;"></div><!--NÃO POSSUI SUSTENIDO-->
+
+                    <div data-key="digit5">   <h1>5</h1>   <h3>F#</h3>   </div>
+                    <div data-key="digit6">   <h1>6</h1>   <h3>G#</h3>   </div>
+                    <div data-key="digit7">   <h1>7</h1>   <h3>A#</h3>   </div>
+
+                    <div style="visibility: hidden;"></div><!--NÃO POSSUI SUSTENIDO-->
+
+                </div>
+                
+            </div>
+            
+            <aside>  
+                
+                <input id="range" type="range" min="0" max="300" style="width: 150px; rotate: -90deg;">
+
+                <div class="number"><p>000</p></div>
+
+                <div class="text"><p style="font-size: 1.6rem;">BPM</p></div>
+
+            </aside>
+    
+        </main>
+            
+
+        <section id="composition">
+
+            <input type="text" placeholder="Faça sua composição" id="input">
+            <button>Tocar</button>
+        
+        </section>
+
+        <footer>
+            <h3 class="credits">criado por wigor skorek</h3>
+            <a href="https://www.instagram.com/wigorsk/" target="_blank"><img src="assets/images/instagram.gif"></a>
+        </footer>
+
+    </div>
+
+    <div>
+        <audio src="assets/sound/keyq.wav" id="s_keyq"></audio>
+        <audio src="assets/sound/keyw.wav" id="s_keyw"></audio>
+        <audio src="assets/sound/keye.wav" id="s_keye"></audio>
+        <audio src="assets/sound/keyr.wav" id="s_keyr"></audio>
+        <audio src="assets/sound/keyt.wav" id="s_keyt"></audio>
+        <audio src="assets/sound/keyy.wav" id="s_keyy"></audio>
+        <audio src="assets/sound/keyu.wav" id="s_keyu"></audio>
+
+        <audio src="assets/sound/digit2.wav" id="s_digit2"></audio>
+        <audio src="assets/sound/digit3.wav" id="s_digit3"></audio>
+        <audio src="assets/sound/digit5.wav" id="s_digit5"></audio>
+        <audio src="assets/sound/digit6.wav" id="s_digit6"></audio>
+        <audio src="assets/sound/digit7.wav" id="s_digit7"></audio>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
